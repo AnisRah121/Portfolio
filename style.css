@@ -39,7 +39,7 @@ section {
 /* ===== HOME FIX ===== */
 .home {
  
-  background: url(Picture.png) no-repeat; /* FIX */
+  
   height: 100vh;
   display: flex;
   align-items: center;
@@ -1105,6 +1105,34 @@ span {
     transition: .25s ease;
     transition-delay: 0s;
   }
+
+    /* ===== HOME MOBILE FIX (ADD HERE) ===== */
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 0;        /* removes overflow */
+    padding: 8rem 4% 4rem;
+  }
+
+  .home-img {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .home-img img {
+    width: 80%;
+    height: auto;
+  }
+
+  .home-imgHover {
+    display: none;
+  }
+
+
+     //end HOME MOBILE FIX
+
+
   .navbar.active .active-nav {
     left: 0;
     transition-delay: .25s;
